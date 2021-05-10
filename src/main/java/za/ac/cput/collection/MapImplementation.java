@@ -36,4 +36,8 @@ public class MapImplementation {
     public static int counter(){
         return usernameMap.size();
     }
+
+    public  static Map<String, Integer> getMap(){
+        return usernameMap;
+    }
 }

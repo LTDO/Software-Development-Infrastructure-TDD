@@ -30,14 +30,14 @@ public class ListImplementation {
         return num;
     }
 
-    public int findInList(int val){
+    public boolean findInList(int val){
         List<Integer> myList = new ArrayList<>();
 
         if (myList.contains(val)){
             for (int i = 0; i < myList.size(); i++) {
-                return myList.indexOf(val);
+                return true;
             }
         }
-        return 404;
+        return false;
     }
 }

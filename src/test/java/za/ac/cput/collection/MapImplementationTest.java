@@ -28,10 +28,10 @@ class MapImplementationTest {
         MapImplementation.storeName("Lunga", "Tshila");
         MapImplementation.storeName("Clarke", "Oakland");
         MapImplementation.storeName("Bellamy", "Owens");
-        MapImplementation.storeName("Jasper", "Cena");
+        MapImplementation.storeName("Jasper", "Campbell");
         MapImplementation.clear();
 
-        assertEquals(MapImplementation.counter(), 2);
+        assertEquals(MapImplementation.counter(), 0);
 
     }
 
@@ -44,8 +44,8 @@ class MapImplementationTest {
         MapImplementation.storeName("Manesh", "Tshila");
         MapImplementation.storeName("Njinayi", "Kwaza");
 
-
         assertEquals(MapImplementation.clearName("Ovayo"), "Ovayo cleared from system");
+        System.out.println(MapImplementation.getMap());
 
     }
 
