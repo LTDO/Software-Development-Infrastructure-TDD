@@ -9,55 +9,36 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SetImplementationTest {
 
-    SetImplementation.Person person = new SetImplementation.Person();
+
+    SetImplementation setImp = new SetImplementation();
     @Test
-    void testAddToSet(){
-        SetImplementation.Person person1 = new SetImplementation.Person("Lunga", "Tshila", 24);
-        SetImplementation.Person person2 = new SetImplementation.Person("Ovayo", "Thethani", 14);
-        SetImplementation.Person person3 = new SetImplementation.Person("Thembela", "Tshila", 29);
-        SetImplementation.Person person4 = new SetImplementation.Person("Manesh", "Kwaza", 46);
-        SetImplementation.Person person5 = new SetImplementation.Person("Grace", "Tshila", 67);
+    void testAddtoSet(){
+        setImp.addToSet("Lunga", 25_000);
+        setImp.addToSet("Ovayo", 15_000);
+        setImp.addToSet("Manesh", 20_000);
 
-        Set<SetImplementation.Person> personSet = new HashSet<>();
-        person.addToSet(personSet.add(person1));
-        person.addToSet(personSet.add(person2));
-        person.addToSet(personSet.add(person3));
-
-        assertEquals(personSet.size(), 3);
+        assertEquals(setImp.counter(), 3);
     }
 
     @Test
     void testRemoveFromSet(){
-        SetImplementation.Person person1 = new SetImplementation.Person("Lunga", "Tshila", 24);
-        SetImplementation.Person person2 = new SetImplementation.Person("Ovayo", "Thethani", 14);
-        SetImplementation.Person person3 = new SetImplementation.Person("Thembela", "Tshila", 29);
-        SetImplementation.Person person4 = new SetImplementation.Person("Manesh", "Kwaza", 46);
-        SetImplementation.Person person5 = new SetImplementation.Person("Grace", "Tshila", 67);
+        setImp.addToSet("Lunga", 25_000);
+        setImp.addToSet("Ovayo", 15_000);
+        setImp.addToSet("Manesh", 20_000);
 
-        Set<SetImplementation.Person> personSet = new HashSet<>();
-        person.addToSet(personSet.add(person4));
-        person.addToSet(personSet.add(person5));
-        person.addToSet(personSet.add(person3));
+        setImp.removeFromSet("Lunga");
 
-        person.removeFromSet(personSet.remove(person3));
-        assertEquals(person.findFromSet(personSet.contains(person3)), false);
+        assertEquals(setImp.counter(), 2);
     }
 
     @Test
     void testFindFromSet(){
-        SetImplementation.Person person1 = new SetImplementation.Person("Lunga", "Tshila", 24);
-        SetImplementation.Person person2 = new SetImplementation.Person("Ovayo", "Thethani", 14);
-        SetImplementation.Person person3 = new SetImplementation.Person("Thembela", "Tshila", 29);
-        SetImplementation.Person person4 = new SetImplementation.Person("Manesh", "Kwaza", 46);
-        SetImplementation.Person person5 = new SetImplementation.Person("Grace", "Tshila", 67);
+        setImp.addToSet("Lunga", 25_000);
+        setImp.addToSet("Ovayo", 15_000);
+        setImp.addToSet("Manesh", 20_000);
 
-        Set<SetImplementation.Person> personSet = new HashSet<>();
-        person.addToSet(personSet.add(person4));
-        person.addToSet(personSet.add(person5));
-        person.addToSet(personSet.add(person3));
-        person.addToSet(personSet.add(person2));
+        setImp.removeFromSet("Lunga");
 
-        assertEquals(person.findFromSet(personSet.equals(person1)), false);
+        assertEquals(setImp.findFromSet("Manesh"), true);
     }
-
 }
