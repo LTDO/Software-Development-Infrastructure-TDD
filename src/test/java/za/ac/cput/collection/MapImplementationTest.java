@@ -20,7 +20,6 @@ class MapImplementationTest {
 
     }
 
-
     @Test
     void testMapRemoveAll(){
 
@@ -48,5 +47,4 @@ class MapImplementationTest {
         System.out.println(MapImplementation.getMap());
 
     }
-
 }

@@ -1,3 +1,10 @@
+/**
+ * ListImplementation.java
+ * This class holds implementation for constructing List objects, add, remove, and find objects from List.
+ * @author Lunga Tshila
+ * Date: Tuesday, 10 May 2021
+ */
+
 package za.ac.cput.collection;
 
 import java.util.ArrayList;

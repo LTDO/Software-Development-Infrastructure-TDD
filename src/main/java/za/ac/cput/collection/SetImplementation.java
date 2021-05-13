@@ -1,3 +1,10 @@
+/**
+ * SetImplementation.java
+ * This class holds implementation for constructing objects using a Set, add, remove, and find objects from Set.
+ * @author Lunga Tshila
+ * Date: Tuesday, 12 May 2021
+ */
+
 package za.ac.cput.collection;
 
 import java.util.HashSet;

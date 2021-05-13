@@ -1,3 +1,10 @@
+/**
+ * MapImplementation.java
+ * This class holds implementation for constructing objects using a Map/HashMap, add, remove, and find objects from Map.
+ * @author Lunga Tshila
+ * Date: Tuesday, 10 May 2021
+ */
+
 package za.ac.cput.collection;
 
 import java.util.HashMap;

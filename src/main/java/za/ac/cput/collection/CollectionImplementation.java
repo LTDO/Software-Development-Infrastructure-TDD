@@ -1,4 +1,11 @@
-    package za.ac.cput.collection;
+/**
+ * CollectionImplementation.java
+ * This is a concrete class for constructing collection objects, add, remove, and find objects from a Collection
+ * @author Lunga Tshila
+ * Date: Tuesday, 10 May 2021
+ */
+
+package za.ac.cput.collection;
 
     import java.util.ArrayList;
     import java.util.Collection;
