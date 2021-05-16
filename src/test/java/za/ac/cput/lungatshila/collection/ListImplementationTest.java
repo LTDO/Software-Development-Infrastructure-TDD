@@ -1,4 +1,4 @@
-package za.ac.cput.collection;
+package za.ac.cput.lungatshila.collection;
 
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;

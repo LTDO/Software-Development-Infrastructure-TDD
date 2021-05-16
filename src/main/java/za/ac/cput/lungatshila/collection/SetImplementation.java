@@ -5,7 +5,7 @@
  * Date: Tuesday, 12 May 2021
  */
 
-package za.ac.cput.collection;
+package za.ac.cput.lungatshila.collection;
 
 import java.util.HashSet;
 import java.util.Set;
