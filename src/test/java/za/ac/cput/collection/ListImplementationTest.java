@@ -1,7 +1,6 @@
 package za.ac.cput.collection;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +36,6 @@ class ListImplementationTest {
         assertEquals(15, 15);
 
     }
-
 
     @Test
     void testListFind(){
